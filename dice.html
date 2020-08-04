@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+	body { background-color: blue;
+	color: white;
+	 }
+	div.dice1 {
+		float: left;
+		width: 50px;
+		background: #ff0000;
+		border: #999 1px solid;
+		padding: 10px;
+		font-size: 24px;
+        text-align: center;
+        margin: 5px;
+
+	}
+	div.dice2 {
+		float: left;
+		width: 50px;
+		background: #00ff00;
+		border: #999 1px solid;
+		padding: 10px;
+		font-size: 24px;
+        text-align: center;
+        margin: 5px;
+
+	}
+</style>
+<script>
+	function rollDice1() {
+		var die1 = document.getElementById('die1');
+	
+		
+	var status1 = document.getElementById('status1');
+	var d1 = Math.floor(Math.random() * 6) + 1;
+	die1.innerHTML = d1;
+	
+	status1.innerHTML = d1 + "was rolled";
+			
+	}
+
+
+	function rollDice2() {
+		var die2 = document.getElementById('die2');
+	
+		
+	var status2 = document.getElementById('status2');
+	var d2 = Math.floor(Math.random() * 6) + 1;
+	die2.innerHTML = d2;
+	
+	status2.innerHTML = d2 + "was rolled";
+	
+			
+	}/*
+	function winner() {
+		if(d1<d2){
+			document. getElementById("winner").innerHTML =
+			"s won";
+		}else {
+			document.getElementById("winner").innerHTML =
+			"p won";
+		}else {
+			document.getElementById('winner').innerHTML = 
+			"no body won";
+		}
+	}*/
+/*
+	function winner(){
+
+	var player1 = rollDice1();
+	var player2 = rollDice2();
+		if( player1 > player)
+	{
+		document.getElementById('winner').innerHTML = 
+		'p is the winner.';	}
+		else {
+			document.getElementById('winner').innerHTML =
+			's is the winner';
+		}
+
+
+	}
+*/
+function winner() {
+	value1 = document.getElementById('status1').innerHTML;
+
+	value2 = document.getElementById('status2').innerHTML;
+player1 = parseInt(value1);
+player2 = parseInt(value2);
+	if( player1 > player2)
+	{
+		document.getElementById('winner').innerHTML = 
+		'p is the winner.';	}
+		else {
+			document.getElementById('winner').innerHTML =
+			's is the winner';
+		}
+
+	if(player1 == player2) {
+		document.getElementById('winner').innerHTML =
+		"nobody won";
+	}
+
+}
+	</script>
+
+<head>
+</head>
+<body>
+	<div id="die1" class="dice1">p</div>
+	<div id="die2" class="dice2">s</div><br><br><br/>
+	<button onclick="rollDice1() "  style="margin-left: -160px;"> Roll Dice </button>
+
+	<button onclick="rollDice2()"  style="margin-left: 10px;"> Roll Dice </button><br/>
+	<span id="status1" style="clear: left;"></span>
+	<span id="status2" style="clear: left;"></span><br>
+	<br>
+	<p id="winner"></p>
+	<button onclick="winner()">winner</button>
+
+
+</body>
+</html>

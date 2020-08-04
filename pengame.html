@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	
+	<title> pen game </title>
+	<style>
+		div {
+
+		  width: 300px;
+		  height: 200px;
+		  background-color: white;
+		  position: relative;
+		  animation-name: example;
+		  animation-duration: 10s;
+		  z-index: -1;
+		  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQZViPiug-sRQGK7pYzbXyModN-5fFKNhPYaYIROW7Q9H4ddYuI&usqp=CAU');
+
+		}
+
+@keyframes example {
+  0%   { left:0px; top:0px;}
+  15%  { left:1000px; top:0px;}
+  30%  { left:1000px; top: 400px;}
+  45%  {left:0px; top: 400px;}
+  60% { left: 1000px; top: 400px;}
+  75% {left: 1000px; top: 0px;}
+100%{left: 0px; top: 0px;}}
+
+		body{
+			background-color: blue;
+			
+		}
+		input { color: red; 
+		}
+button {
+	background-color: red;
+	padding: 15px 25px;
+}
+p{
+	color:white;
+}
+	</style>
+	<script src="pengame.js" defer></script>
+</head>
+<body>
+	<div></div>
+	<p>firstly, you both tell me your names:- </p>
+	<p><span>player1: <input id="player1"></span>
+		<span> player2: <input id="player2">
+		</span>
+	</p>
+	<button onclick="welcome()">play</button>
+	<p id="welcome"></p>
+	<button onclick="rules()">rules</button>
+	<p id="rules"></p>
+	<p><span>input: <input id="input1"></span>
+	<button onclick="input1()">done</button>
+	<p id="output1"></p>
+	<span id="show" style="display:none;"><input id="input2">
+		<button onclick="input2()">done</button>
+	</span>
+	<p id="output2"></p>
+
+
+<span id="show1" style="display:none;"><input id="input3">
+		<button onclick="input3()">done</button>
+	</span>
+	<p id="output3"></p>
+
+<span id="show2" style="display:none;"><input id="input4">
+		<button onclick="input4()">done</button>
+	</span>
+	<p id="output4"></p>
+
+	<span id="show3" style="display:none;"><input id="input5">
+		<button onclick="input5()">done</button>
+	</span>
+<p id="output5"></p>
+
+<span id="show4" style="display:none;"><input id="input6">
+		<button onclick="input6()">done</button>
+	</span>
+<p id="output6"></p>
+
+<span id="show5" style="display:none;"><input id="input7">
+		<button onclick="input7()">done</button>
+	</span>
+<p id="output7"></p>
+
+
+<span id="show6" style="display:none;"><input id="input8">
+		<button onclick="input8()">done</button>
+	</span>
+<p id="output8"></p>
+
+
+
+<span id="show7" style="display:none;"><input id="input9">
+		<button onclick="input9()">done</button>
+	</span>
+<p id="output9"></p>
+
+
+
+<span id="show8" style="display:none;"><input id="input10">
+		<button onclick="input10()">done</button>
+	</span>
+<p id="output10"></p>
+
+
+
+<span id="show9" style="display:none;"><input id="input11">
+		<button onclick="input11()">done</button>
+	</span>
+<p id="output11"></p>
+	
+
+
+<span id="show10" style="display:none;"><input id="input12">
+		<button onclick="input12()">done</button>
+	</span>
+<p id="output12"></p>
+	
+
+
+<span id="show11" style="display:none;"><input id="input13">
+		<button onclick="input13()">done</button>
+	</span>
+<p id="output13"></p>
+
+
+<span id="show12" style="display:none;"><input id="input14">
+		<button onclick="input14()">done</button>
+	</span>
+<p id="output14"></p>
+
+<span id="show13" style="display:none;"><input id="input15">
+		<button onclick="input15()">done</button>
+	</span>
+<p id="output15"></p>
+	
+
+<span id="show14" style="display:none;"><input id="input16">
+		<button onclick="input16()">done</button>
+	</span>
+<p id="output16"></p>
+	
+
+<span id="show15" style="display:none;"><input id="input17">
+		<button onclick="input17()">done</button>
+	</span>
+<p id="output17"></p>
+	
+
+<span id="show16" style="display:none;"><input id="input18">
+		<button onclick="input18()">done</button>
+	</span>
+<p id="output18"></p>
+
+
+<span id="show17" style="display:none;"><input id="input19">
+		<button onclick="input19()">done</button>
+	</span>
+<p id="output19"></p>
+	
+
+
+<span id="show18" style="display:none;"><input id="input20">
+		<button onclick="input20()">done</button>
+	</span>
+<p id="output20"></p>
+	
+</body>
+</html>
